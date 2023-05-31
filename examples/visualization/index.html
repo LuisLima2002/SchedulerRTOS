@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduler</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        html,body{
+            height: 100%;
+        }
+        td{
+          border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="h-100 container d-flex align-items-center">
+                <table class="table border">
+                    <tbody>
+                      <thead>
+                        <tr>
+                          <td>Tempo</td>
+                          <td >01</td>
+                          <td >02</td>
+                          <td >03</td>
+                          <td >04</td>
+                          <td >05</td>
+                          <td >06</td>
+                          <td >07</td>
+                          <td >08</td>
+                          <td >09</td>
+                          <td >10</td>
+                          <td >11</td>
+                          <td >12</td>
+                          <td >13</td>
+                          <td >14</td>
+                          <td >15</td>
+                          <td >16</td>
+                          <td >17</td>
+                          <td >18</td>
+                          <td >19</td>
+                          <td >20</td>
+                          <td >21</td>
+                          <td >22</td>
+                          <td >23</td>
+                          <td >24</td>
+                          <td >25</td>
+                          <td >26</td>
+                          <td >27</td>
+                          <td >28</td>
+                          <td >29</td>
+                          <td >30</td>
+                          <td >31</td>
+                          <td >32</td>
+                          <td >33</td>
+                          <td >34</td>
+                          <td >35</td>
+                          <td >36</td>
+                          <td >37</td>
+                          <td >38</td>
+                          <td >39</td>
+                          <td >40</td>
+                          <td >41</td>
+                        </tr>
+                      </thead>
+                      <tr>
+                        <td style="width: 5%;">T1</td>
+                        <td id="T1time0"></td>
+                        <td id="T1time1"></td>
+                        <td id="T1time2"></td>
+                        <td id="T1time3"></td>
+                        <td id="T1time4"></td>
+                        <td id="T1time5"></td>
+                        <td id="T1time6"></td>
+                        <td id="T1time7"></td>
+                        <td id="T1time8"></td>
+                        <td id="T1time9"></td>
+                        <td id="T1time10"></td>
+                        <td id="T1time11"></td>
+                        <td id="T1time12"></td>
+                        <td id="T1time13"></td>
+                        <td id="T1time14"></td>
+                        <td id="T1time15"></td>
+                        <td id="T1time16"></td>
+                        <td id="T1time17"></td>
+                        <td id="T1time18"></td>
+                        <td id="T1time19"></td>
+                        <td id="T1time20"></td>
+                        <td id="T1time21"></td>
+                        <td id="T1time22"></td>
+                        <td id="T1time23"></td>
+                        <td id="T1time24"></td>
+                        <td id="T1time25"></td>
+                        <td id="T1time26"></td>
+                        <td id="T1time27"></td>
+                        <td id="T1time28"></td>
+                        <td id="T1time29"></td>
+                        <td id="T1time30"></td>
+                        <td id="T1time31"></td>
+                        <td id="T1time32"></td>
+                        <td id="T1time33"></td>
+                        <td id="T1time34"></td>
+                        <td id="T1time35"></td>
+                        <td id="T1time36"></td>
+                        <td id="T1time37"></td>
+                        <td id="T1time38"></td>
+                        <td id="T1time39"></td>
+                        <td id="T1time40"></td>
+                      </tr>
+                      <tr>
+                        <td style="width: 5%;">T2</td>
+                        <td id="T2time0"></td>
+                        <td id="T2time1"></td>
+                        <td id="T2time2"></td>
+                        <td id="T2time3"></td>
+                        <td id="T2time4"></td>
+                        <td id="T2time5"></td>
+                        <td id="T2time6"></td>
+                        <td id="T2time7"></td>
+                        <td id="T2time8"></td>
+                        <td id="T2time9"></td>
+                        <td id="T2time10"></td>
+                        <td id="T2time11"></td>
+                        <td id="T2time12"></td>
+                        <td id="T2time13"></td>
+                        <td id="T2time14"></td>
+                        <td id="T2time15"></td>
+                        <td id="T2time16"></td>
+                        <td id="T2time17"></td>
+                        <td id="T2time18"></td>
+                        <td id="T2time19"></td>
+                        <td id="T2time20"></td>
+                        <td id="T2time21"></td>
+                        <td id="T2time22"></td>
+                        <td id="T2time23"></td>
+                        <td id="T2time24"></td>
+                        <td id="T2time25"></td>
+                        <td id="T2time26"></td>
+                        <td id="T2time27"></td>
+                        <td id="T2time28"></td>
+                        <td id="T2time29"></td>
+                        <td id="T2time30"></td>
+                        <td id="T2time31"></td>
+                        <td id="T2time32"></td>
+                        <td id="T2time33"></td>
+                        <td id="T2time34"></td>
+                        <td id="T2time35"></td>
+                        <td id="T2time36"></td>
+                        <td id="T2time37"></td>
+                        <td id="T2time38"></td>
+                        <td id="T2time39"></td>
+                        <td id="T2time40"></td>
+                      </tr>
+                      <tr>
+                        <td style="width: 5%;">T3</td>
+                        <td id="T3time0"></td>
+                        <td id="T3time1"></td>
+                        <td id="T3time2"></td>
+                        <td id="T3time3"></td>
+                        <td id="T3time4"></td>
+                        <td id="T3time5"></td>
+                        <td id="T3time6"></td>
+                        <td id="T3time7"></td>
+                        <td id="T3time8"></td>
+                        <td id="T3time9"></td>
+                        <td id="T3time10"></td>
+                        <td id="T3time11"></td>
+                        <td id="T3time12"></td>
+                        <td id="T3time13"></td>
+                        <td id="T3time14"></td>
+                        <td id="T3time15"></td>
+                        <td id="T3time16"></td>
+                        <td id="T3time17"></td>
+                        <td id="T3time18"></td>
+                        <td id="T3time19"></td>
+                        <td id="T3time20"></td>
+                        <td id="T3time21"></td>
+                        <td id="T3time22"></td>
+                        <td id="T3time23"></td>
+                        <td id="T3time24"></td>
+                        <td id="T3time25"></td>
+                        <td id="T3time26"></td>
+                        <td id="T3time27"></td>
+                        <td id="T3time28"></td>
+                        <td id="T3time29"></td>
+                        <td id="T3time30"></td>
+                        <td id="T3time31"></td>
+                        <td id="T3time32"></td>
+                        <td id="T3time33"></td>
+                        <td id="T3time34"></td>
+                        <td id="T3time35"></td>
+                        <td id="T3time36"></td>
+                        <td id="T3time37"></td>
+                        <td id="T3time38"></td>
+                        <td id="T3time39"></td>
+                        <td id="T3time40"></td>
+                      </tr>
+                      <tr>
+                        <td style="width: 5%;">Server</td>
+                        <td id="Servertime0"></td>
+                        <td id="Servertime1"></td>
+                        <td id="Servertime2"></td>
+                        <td id="Servertime3"></td>
+                        <td id="Servertime4"></td>
+                        <td id="Servertime5"></td>
+                        <td id="Servertime6"></td>
+                        <td id="Servertime7"></td>
+                        <td id="Servertime8"></td>
+                        <td id="Servertime9"></td>
+                        <td id="Servertime10"></td>
+                        <td id="Servertime11"></td>
+                        <td id="Servertime12"></td>
+                        <td id="Servertime13"></td>
+                        <td id="Servertime14"></td>
+                        <td id="Servertime15"></td>
+                        <td id="Servertime16"></td>
+                        <td id="Servertime17"></td>
+                        <td id="Servertime18"></td>
+                        <td id="Servertime19"></td>
+                        <td id="Servertime20"></td>
+                        <td id="Servertime21"></td>
+                        <td id="Servertime22"></td>
+                        <td id="Servertime23"></td>
+                        <td id="Servertime24"></td>
+                        <td id="Servertime25"></td>
+                        <td id="Servertime26"></td>
+                        <td id="Servertime27"></td>
+                        <td id="Servertime28"></td>
+                        <td id="Servertime29"></td>
+                        <td id="Servertime30"></td>
+                        <td id="Servertime31"></td>
+                        <td id="Servertime32"></td>
+                        <td id="Servertime33"></td>
+                        <td id="Servertime34"></td>
+                        <td id="Servertime35"></td>
+                        <td id="Servertime36"></td>
+                        <td id="Servertime37"></td>
+                        <td id="Servertime38"></td>
+                        <td id="Servertime39"></td>
+                        <td id="Servertime40"></td>
+                      </tr>
+                      <tr>
+                        <td style="width: 5%;">idle</td>
+                        <td id="idletime0"></td>
+                        <td id="idletime1"></td>
+                        <td id="idletime2"></td>
+                        <td id="idletime3"></td>
+                        <td id="idletime4"></td>
+                        <td id="idletime5"></td>
+                        <td id="idletime6"></td>
+                        <td id="idletime7"></td>
+                        <td id="idletime8"></td>
+                        <td id="idletime9"></td>
+                        <td id="idletime10"></td>
+                        <td id="idletime11"></td>
+                        <td id="idletime12"></td>
+                        <td id="idletime13"></td>
+                        <td id="idletime14"></td>
+                        <td id="idletime15"></td>
+                        <td id="idletime16"></td>
+                        <td id="idletime17"></td>
+                        <td id="idletime18"></td>
+                        <td id="idletime19"></td>
+                        <td id="idletime20"></td>
+                        <td id="idletime21"></td>
+                        <td id="idletime22"></td>
+                        <td id="idletime23"></td>
+                        <td id="idletime24"></td>
+                        <td id="idletime25"></td>
+                        <td id="idletime26"></td>
+                        <td id="idletime27"></td>
+                        <td id="idletime28"></td>
+                        <td id="idletime29"></td>
+                        <td id="idletime30"></td>
+                        <td id="idletime31"></td>
+                        <td id="idletime32"></td>
+                        <td id="idletime33"></td>
+                        <td id="idletime34"></td>
+                        <td id="idletime35"></td>
+                        <td id="idletime36"></td>
+                        <td id="idletime37"></td>
+                        <td id="idletime38"></td>
+                        <td id="idletime39"></td>
+                        <td id="idletime40"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+    </div>
+
+    <script>
+    var portStr="";
+    if(location.port != "")
+    {
+      portStr=":"+location.port;
+    }
+    var protocolStr="ws";
+    if (location.protocol === 'https:') {
+      protocolStr="wss";
+    }
+    var ws = new WebSocket("ws"+'://' + "localhost" + ":3000"+"/");
+    var i=0;
+    ws.onmessage = function(message){
+      text = message.data
+      color=!text.includes("-RC")?"bg-success":"bg-danger"
+      text = text.replace("-RC","")
+      document.getElementById(text+"time"+i).className=color;
+      i++;
+      if(i>40){
+        i=0
+        window.location.reload(true)
+      }
+    }
+    </script>
+</body>
+</html>
